@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Каталог</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <button class="burger _toggle-menu">
+                <img src="img/burger.svg" alt="">
+                <span>менЮ</span>
+            </button>
+
+            <a href="" class="header__logo">
+                <img src="img/logo2.png" alt="">
+            </a>
+            <div class="mob-menu">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="">Главная</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a>Проекты</a>
+                            <div class="sub-menu">
+                                <div class="sub-menu__grid">
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Строительство коттеджей</a></li>
+                                        <li class="menu-item"><a href="">Участки с подрядом</a></li>
+                                        <li class="menu-item"><a href="">Внутренняя отделка</a></li>
+                                        <li class="menu-item"><a href="">Готовые дома</a></li>
+                                    </ul>
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Стройматериалы</a></li>
+                                        <li class="menu-item"><a href="">Отопление, вентиляция</a></li>
+                                        <li class="menu-item"><a href="">Скважины, колодцы</a></li>
+                                        <li class="menu-item"><a href="">Аренда техники</a></li>
+                                    </ul>
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Окна, двери</a></li>
+                                        <li class="menu-item"><a href="">Заборы, ворота</a></li>
+                                        <li class="menu-item"><a href="">Дорожки, парковки</a></li>
+                                        <li class="menu-item"><a href="">Электрика</a></li>
+                                    </ul>
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Гаражи, бани</a></li>
+                                        <li class="menu-item"><a href="">Озеленение участка</a></li>
+                                        <li class="menu-item"><a href="">Септики, дренаж</a></li>
+                                        <li class="menu-item"><a href="">Бытовки</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">УСЛУГИ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Стройматериалы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Youtube канал</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">О компании</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mob-menu__contacts">
+                    <a href="tel:+74957418737" class="mob-menu__contacts-link">+7 (495) 741-87-37</a>
+                    <a href="mailto:mail@yaska.house" class="mob-menu__contacts-link">mail@yaska.house</a>
+                </div>
+                <button class="mob-menu__close _toggle-menu">
+                    <img src="img/close.svg" alt="">
+                    <span>закрыть</span>
+                </button>
+            </div>
+
+            <div class="header-action">
+                <a href="tel:+74957418737" class="header-action__phone">
+                    +7 (495) 741-87-37
+                </a>
+                <a href="" class="header-action__whatsapp">
+                    <img src="img/whatsapp.svg" alt="">
+                    <span>Спросить в WhatsApp</span>
+                </a>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="catalog">
+
+                <div class="catalog-top">
+                    <div class="catalog-top__desktop">
+                        <div class="catalog-top__group">
+                            <div class="catalog-tab">
+                                <span>до 100 м²</span>
+                            </div>
+                            <div class="catalog-tab">
+                                <span>100 м² - 150 м²</span>
+                            </div>
+                            <div class="catalog-tab _active">
+                                <span>150 м² - 200 м²</span>
+                            </div>
+                            <div class="catalog-tab">
+                                <span>более 200 м²</span>
+                            </div>
+                        </div>
+                        <div class="catalog-top__group">
+                            <div class="catalog-tab">
+                                <span>1 этаж</span>
+                            </div>
+                            <div class="catalog-tab">
+                                <span>2 этажа</span>
+                            </div>
+                        </div>
+                        <div class="catalog-top__group">
+                            <div class="catalog-tab">
+                                <span>Скатная кровля</span>
+                            </div>
+                            <div class="catalog-tab">
+                                <span>Плоская кровля</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__items">
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="not-fit">
+                    <div class="not-fit__img">
+                        <img src="img/fit.png" alt="">
+                    </div>
+                    <div class="not-fit__content">
+                        <div class="not-fit__title">
+                            Не подходит <br> ни один проект?
+                        </div>
+                        <div class="not-fit__desc">
+                            Наши архитекторы нарисуют Вам <br>индивидуальный проект совершенно бесплатно!
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__items">
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                    <a href="" class="home-card">
+                        <div class="home-card__img">
+                            <img src="https://xn--80atu9c.xn--p1ai/wp-content/uploads/2022/10/300_pp-768x432.jpg" alt="">
+                        </div>
+                        <div class="home-card__text text14 text10-tablet">
+                            146КС
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="catalog-bottom">
+                    <a href="" class="catalog-card">
+                        <span class="catalog-card__title">
+                            Скачать каталог <br>лучших проектов
+                        </span>
+                        <img src="img/catalog.webp" alt="" class="catalog-card__img">
+                    </a>
+                    <a href="" class="catalog-card">
+                        <span class="catalog-card__title">
+                            Посчитать мой <br> проект
+                        </span>
+                        <img src="img/catalog2.webp" alt="" class="catalog-card__img">
+                    </a>
+                    <a href="" class="catalog-card">
+                        <span class="catalog-card__title">
+                            Записаться на просмотр <br> построенных домов
+                        </span>
+                        <img src="img/catalog3.webp" alt="" class="catalog-card__img">
+                    </a>
+                    <a href="" class="catalog-card">
+                        <span class="catalog-card__title">
+                            Записаться на 3D тур <br> по проектам в VR очках
+                        </span>
+                        <img src="img/catalog4.webp" alt="" class="catalog-card__img">
+                    </a>
+                </div>
+
+                <div class="contacts__bottom">
+                    <div class="contacts__bottom-text">
+                        © Яска, 2024
+                    </div>
+                    <div class="contacts__bottom-text">
+                        Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя. Сайт не является публичной офертой.
+                    </div>
+                    <div class="socials">
+                        <a href="" class="socials__item">
+                            <img src="img/whatsapp2.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/tg.svg" alt="">
+                        </a>
+                        <a href="" class="socials__item">
+                            <img src="img/youtube.svg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

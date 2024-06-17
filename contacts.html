@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
+    <title>Контакты</title>
+</head>
+
+
+<body class="m-page">
+    <div class="wrapper">
+        <header class="header">
+            <button class="burger _toggle-menu">
+                <img src="img/burger.svg" alt="">
+                <span>менЮ</span>
+            </button>
+
+            <a href="" class="header__logo">
+                <img src="img/logo2.png" alt="">
+            </a>
+            <div class="mob-menu">
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="">Главная</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a>Проекты</a>
+                            <div class="sub-menu">
+                                <div class="sub-menu__grid">
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Строительство коттеджей</a></li>
+                                        <li class="menu-item"><a href="">Участки с подрядом</a></li>
+                                        <li class="menu-item"><a href="">Внутренняя отделка</a></li>
+                                        <li class="menu-item"><a href="">Готовые дома</a></li>
+                                    </ul>
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Стройматериалы</a></li>
+                                        <li class="menu-item"><a href="">Отопление, вентиляция</a></li>
+                                        <li class="menu-item"><a href="">Скважины, колодцы</a></li>
+                                        <li class="menu-item"><a href="">Аренда техники</a></li>
+                                    </ul>
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Окна, двери</a></li>
+                                        <li class="menu-item"><a href="">Заборы, ворота</a></li>
+                                        <li class="menu-item"><a href="">Дорожки, парковки</a></li>
+                                        <li class="menu-item"><a href="">Электрика</a></li>
+                                    </ul>
+                                    <ul class="sub-menu__col">
+                                        <li class="menu-item"><a href="">Гаражи, бани</a></li>
+                                        <li class="menu-item"><a href="">Озеленение участка</a></li>
+                                        <li class="menu-item"><a href="">Септики, дренаж</a></li>
+                                        <li class="menu-item"><a href="">Бытовки</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">УСЛУГИ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Стройматериалы</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">Youtube канал</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="">О компании</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mob-menu__contacts">
+                    <a href="tel:+74957418737" class="mob-menu__contacts-link">+7 (495) 741-87-37</a>
+                    <a href="mailto:mail@yaska.house" class="mob-menu__contacts-link">mail@yaska.house</a>
+                </div>
+                <button class="mob-menu__close _toggle-menu">
+                    <img src="img/close.svg" alt="">
+                    <span>закрыть</span>
+                </button>
+            </div>
+
+            <div class="header-action">
+                <a href="tel:+74957418737" class="header-action__phone">
+                    +7 (495) 741-87-37
+                </a>
+                <a href="" class="header-action__whatsapp">
+                    <img src="img/whatsapp.svg" alt="">
+                    <span>Спросить в WhatsApp</span>
+                </a>
+            </div>
+
+        </header>
+        <main class="content">
+
+            <div class="parallax-scroll">
+
+                <section class="contacts slide parallax-active">
+                    <div class="contacts__col">
+                        <div class="contacts__title">
+                            Москва
+                        </div>
+                        <div class="contacts__wrap">
+                            <div class="contacts__group">
+                                <div class="contacts__text">
+                                    <div class="text14 text12-tablet">
+                                        Москва, поселение Московский,  квартал № 32, владение 16 с6
+                                    </div>
+                                    <div class="text14 text12-tablet">
+                                        Режим работы: <br>
+                    09:00 -21:00 без выходных
+                                    </div>
+                                </div>
+                                <div class="socials">
+                                    <a href="" class="socials__item">
+                                        <img src="img/whatsapp2.svg" alt="">
+                                    </a>
+                                    <a href="" class="socials__item">
+                                        <img src="img/tg.svg" alt="">
+                                    </a>
+                                    <a href="" class="socials__item">
+                                        <img src="img/youtube.svg" alt="">
+                                    </a>
+                                </div>
+
+                            </div>
+                            <img src="img/contacts-img.jpg" alt="" class="contacts__img">
+                        </div>
+                        <div class="contacts__cities">
+                            <div data-id="0" class="contacts__city _active">Москва</div>
+                            <div data-id="1" class="contacts__city">Краснодар</div>
+                            <div data-id="2" class="contacts__city">Нижний Новгород</div>
+                            <div data-id="3" class="contacts__city">Волгоград</div>
+                            <div data-id="4" class="contacts__city">Воронеж</div>
+                            <div data-id="5" class="contacts__city">Казань</div>
+                            <div data-id="6" class="contacts__city">Санкт-Петербург</div>
+                            <div data-id="7" class="contacts__city">Ростов-на-Дону</div>
+                            <div data-id="8" class="contacts__city">Уфа</div>
+                            <div data-id="9" class="contacts__city">Пермь</div>
+                            <div data-id="10" class="contacts__city">Самара</div>
+                            <div data-id="11" class="contacts__city">Саратов</div>
+                        </div>
+                    </div>
+                    <div class="contacts__col2">
+                        <div class="map" id="map">
+
+                        </div>
+                        <script>
+                            ymaps.ready(init);
+                            let coord = [56.838011, 60.597474]
+                            let mapPoints = [{
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [55.755864, 37.617698]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [45.035470, 38.975313]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [56.326797, 44.006516]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [48.707067, 44.516975]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [51.660781, 39.200296]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [55.796127, 49.106414]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [59.938784, 30.314997]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [47.222109, 39.718813]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [54.735152, 55.958736]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [58.010455, 56.229443]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [53.195878, 50.100202]
+                                },
+                                {
+                                    title: "Название,которое надо вывести",
+                                    street: "Адрес улица город и всё такое",
+                                    cords: [51.533562, 46.034266]
+                                },
+                            ]
+
+                            function init() {
+                                let myMap = new ymaps.Map("map", {
+                                    center: coord,
+                                    zoom: 4,
+                                    controls: [],
+                                });
+
+                                myMap.controls.add('zoomControl');
+
+                                let placeMarks = []
+
+                                myMap.behaviors.disable('scrollZoom');
+
+
+                                mapPoints.forEach((el, index) => {
+                                    let placeMark = new ymaps.Placemark(el.cords, {
+                                        balloonContentHeader: ``,
+                                        balloonContentBody: `
+                <div class="place-card">
+                    <div class="place-card__top _flex">
+                        <div class="place-card__title h1">
+                            ${el.title}
+                        </div>
+                    </div>
+                    <div class="place-card__items">
+                        <div class="place-card__item text14">
+                            ${el.street}
+                        </div>
+                    </div>
+                </div>
+                `,
+                                        balloonContentFooter: '',
+                                        hintContent: '',
+                                    }, {});
+                                    myMap.geoObjects.add(placeMark);
+                                    placeMarks.push(placeMark)
+
+                                    $(".contacts__city").click(function() {
+                                        let cardId = +$(this).attr("data-id")
+                                        if (index === cardId) {
+                                            myMap.setCenter(el.cords)
+                                            myMap.setZoom(12);
+                                            $(".contacts__city").removeClass("_active")
+                                            $(this).addClass("_active")
+                                        }
+                                    })
+                                })
+                            }
+                        </script>
+
+                    </div>
+
+
+                </section>
+
+                <section class="advantages advantages2 slide queue">
+                    <div class="advantages__logo">
+                        <img src="img/logo.webp" alt="">
+                    </div>
+                    <div class="advantages__grid">
+                        <div class="advantage-item">
+                            <div class="advantage-item__top">
+                                <div class="advantage-item__title">
+                                    № 1
+                                </div>
+                            </div>
+                            <div class="advantage-item__desc">
+                                в сегменте <br>монолитно-кирпичных  <br>коттеджей
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-item__top">
+                                <div class="advantage-item__title">
+                                    № 1
+                                </div>
+                            </div>
+                            <div class="advantage-item__desc">
+                                самая быстрорастущая  компания в малоэтажном строительстве
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-item__top">
+                                <div class="advantage-item__title">
+                                    топ 3
+                                </div>
+                            </div>
+                            <div class="advantage-item__desc">
+                                по узнаваимости  бренда в малоэтажном строительстве
+                            </div>
+                        </div>
+                        <div class="advantage-item">
+                            <div class="advantage-item__top">
+                                <div class="advantage-item__title">
+                                    1000 +
+                                </div>
+                            </div>
+                            <div class="advantage-item__desc">
+                                построенных  капитальных <br>
+            домов
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="about slide queue">
+                    <div class="about__inner">
+                        <div class="about__col">
+                            <img src="img/about.jpg" alt="" class="about__img _view1">
+                            <img src="img/about2.jpg" alt="" class="about__img _view2">
+                        </div>
+                        <div class="about__col">
+                            <div class="about__items">
+                                <div class="about-card">
+                                    <div class="about-card__title">
+                                        О компании
+                                    </div>
+                                    <div class="about-card__desc text14">
+                                        Компания была основана в 2000 году Алексеем Щербаковым. За более чем 20 лет работы, она выросла из небольшой компании в одного из лидеров рынка. В 2021 году был создан бренд ЯСКА, который сейчас входит в тройку самых узнаваемых брендов загородного строительства в МО. Более 1000 семей уже живут в построенных нами домах, и нам приятно, что они не забывают про нас и рекомендуют Яску, своим друзьям и родственникам.
+                                    </div>
+                                </div>
+                                <div class="about-card">
+                                    <div class="about-card__title">
+                                        Миссия
+                                    </div>
+                                    <div class="about-card__desc text14">
+                                        Сделать доступным капитальное и долговечное жильё. <br>
+                                        Переселить россиян из многоэтажных муравейников в собственные дома.
+                                    </div>
+                                </div>
+                                <div class="about-card">
+                                    <div class="about-card__title">
+                                        Цели
+                                    </div>
+                                    <div class="about-card__desc text14">
+                                        Стать лидером российского рынка в сегменте малоэтажного строительства.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__bottom">
+                        <div class="contacts__bottom-text">
+                            © Яска, 2024
+                        </div>
+                        <div class="contacts__bottom-text">
+                            Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации и объектов без предварительного согласия правообладателя. Сайт не является публичной офертой.
+                        </div>
+                        <div class="socials">
+                            <a href="" class="socials__item">
+                                <img src="img/whatsapp2.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/tg.svg" alt="">
+                            </a>
+                            <a href="" class="socials__item">
+                                <img src="img/youtube.svg" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+        </main>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
