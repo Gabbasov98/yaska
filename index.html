@@ -887,18 +887,18 @@
 
                 <section class="contacts slide queue">
                     <div class="contacts__col">
-                        <div class="contacts__title">
+                        <div class="contacts__title _city">
                             Москва
                         </div>
                         <div class="contacts__wrap">
                             <div class="contacts__group">
                                 <div class="contacts__text">
                                     <div class="text14 text12-tablet">
-                                        Москва, поселение Московский,  квартал № 32, владение 16 с6
+                                        <span class="_address">Москва, поселение Московский,  квартал № 32, владение 16 с6</span>
                                     </div>
                                     <div class="text14 text12-tablet">
                                         Режим работы: <br>
-                    09:00 -21:00 без выходных
+                                        <span class="_time">09:00 -21:00 без выходных</span>
                                     </div>
                                 </div>
                                 <div class="socials">
@@ -914,21 +914,21 @@
                                 </div>
 
                             </div>
-                            <img src="img/contacts-img.jpg" alt="" class="contacts__img">
+                            <img src="img/contacts-img.webp" alt="" class="contacts__img _img">
                         </div>
                         <div class="contacts__cities">
-                            <div data-id="0" class="contacts__city _active">Москва</div>
-                            <div data-id="1" class="contacts__city">Краснодар</div>
-                            <div data-id="2" class="contacts__city">Нижний Новгород</div>
-                            <div data-id="3" class="contacts__city">Волгоград</div>
-                            <div data-id="4" class="contacts__city">Воронеж</div>
-                            <div data-id="5" class="contacts__city">Казань</div>
-                            <div data-id="6" class="contacts__city">Санкт-Петербург</div>
-                            <div data-id="7" class="contacts__city">Ростов-на-Дону</div>
-                            <div data-id="8" class="contacts__city">Уфа</div>
-                            <div data-id="9" class="contacts__city">Пермь</div>
-                            <div data-id="10" class="contacts__city">Самара</div>
-                            <div data-id="11" class="contacts__city">Саратов</div>
+                            <div data-id="0" data-name="Москва" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city _active">Москва</div>
+                            <div data-id="1" data-name="Краснодар" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Краснодар</div>
+                            <div data-id="2" data-name="Нижний Новгород" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Нижний Новгород</div>
+                            <div data-id="3" data-name="Волгоград" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Волгоград</div>
+                            <div data-id="4" data-name="Воронеж" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Воронеж</div>
+                            <div data-id="5" data-name="Казань" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Казань</div>
+                            <div data-id="6" data-name="Санкт-Петербург" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Санкт-Петербург</div>
+                            <div data-id="7" data-name="Ростов-на-Дону" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Ростов-на-Дону</div>
+                            <div data-id="8" data-name="Уфа" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Уфа</div>
+                            <div data-id="9" data-name="Пермь" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Пермь</div>
+                            <div data-id="10" data-name="Самара" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Самара</div>
+                            <div data-id="11" data-name="Саратов" data-address="Москва, поселение Московский,  квартал № 32, владение 16 с6" data-time="09:00 -21:00 без выходных" data-img="img/contacts-img.webp" class="contacts__city">Саратов</div>
                         </div>
                     </div>
                     <div class="contacts__col2">
@@ -1039,6 +1039,16 @@
 
                                     $(".contacts__city").click(function() {
                                         let cardId = +$(this).attr("data-id")
+                                        let name = $(this).attr("data-name")
+                                        let address = $(this).attr("data-address")
+                                        let time = $(this).attr("data-time")
+                                        let img = $(this).attr("data-img")
+
+                                        $("._city").html(name)
+                                        $("._address").html(address)
+                                        $("._time").html(time)
+                                        $("._img").attr("src", img)
+
                                         if (index === cardId) {
                                             myMap.setCenter(el.cords)
                                             myMap.setZoom(12);
