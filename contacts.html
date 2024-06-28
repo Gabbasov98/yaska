@@ -8,6 +8,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036"></script>
     <title>Контакты</title>
@@ -397,10 +398,243 @@
         </main>
     </div>
 
+    <div class="cookie-modal _active">
+        <div class="cookie-modal__content">
+            <div class="cookie-modal__title">
+                Используем куки
+            </div>
+            <div class="cookie-modal__desc">
+                Это чтобы сайт работал лучше. <br>
+            Оставаясь с нами, вы соглашаетесь  на использование <a href="">файлов куки</a>.
+            </div>
+        </div>
+        <div class="cookie-modal__nav">
+            <button class="_cookie-close cookie-modal__btn">
+                <span>Ок</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="modal" id="catalogModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12.1276 12.1276" stroke="#4B4F53" stroke-width="2" />
+                    <path d="M1 12.125L12.1276 0.997372" stroke="#4B4F53" stroke-width="2" />
+                </svg>
+            </button>
+            <div class="modal__grid">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Скачать каталог <br>лучших проектов
+                    </div>
+                    <div class="modal__img">
+                        <img src="img/modal-img.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__bottom">
+                    <form action="" class="modal-form">
+                        <div class="modal-form__fields">
+                            <div class="fg">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="fg">
+                                <label>Прислать на WhatsApp</label>
+                                <input type="tel" placeholder="+7 (000) 000-00-00">
+                            </div>
+                            <div class="fg">
+                                <label>или на почту</label>
+                                <input type="email" placeholder="e-mail">
+                            </div>
+                        </div>
+                        <button class="modal-form__btn m-btn m-btn-black">
+                            <span>Скачать</span>
+                        </button>
+
+                        <div class="modal-form__hint">
+                            <div class="text10">
+                                Нажав кнопку Вы даёте согласие с <a href="">политикой конфиденциальности</a> и даёте согласие на обработку персональных данных
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal2" id="calcModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12.1276 12.1276" stroke="#4B4F53" stroke-width="2" />
+                    <path d="M1 12.125L12.1276 0.997372" stroke="#4B4F53" stroke-width="2" />
+                </svg>
+            </button>
+            <div class="modal__grid">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Посчитать мой <br>
+                    проект
+                    </div>
+                    <div class="modal__img">
+                        <img src="img/modal-img2.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__bottom">
+                    <form action="" class="modal-form">
+                        <div class="modal-form__fields">
+                            <div class="fg">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="fg">
+                                <label>Прислать на WhatsApp</label>
+                                <input type="tel" placeholder="+7 (000) 000-00-00">
+                            </div>
+                            <div class="fg">
+                                <label>или на почту</label>
+                                <input type="email" placeholder="e-mail">
+                            </div>
+                        </div>
+                        <button class="modal-form__btn m-btn m-btn-black">
+                            <span>ПОСЧИТАТЬ</span>
+                        </button>
+
+                        <div class="modal-form__hint">
+                            <div class="text10">
+                                Нажав кнопку Вы даёте согласие с <a href="">политикой конфиденциальности</a> и даёте согласие на обработку персональных данных
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal3" id="lookModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12.1276 12.1276" stroke="#4B4F53" stroke-width="2" />
+                    <path d="M1 12.125L12.1276 0.997372" stroke="#4B4F53" stroke-width="2" />
+                </svg>
+            </button>
+            <div class="modal__grid">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Записаться на просмотр построенных домов
+                    </div>
+                    <div class="modal__img">
+                        <img src="img/modal-img3.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__bottom">
+                    <form action="" class="modal-form">
+                        <div class="modal-form__fields">
+                            <div class="modal-form__wrap">
+                                <div class="fg date-input">
+                                    <input type="text" readonly placeholder="25.06.2024">
+                                </div>
+                                <div class="fg">
+                                    <select>
+                                        <option>12:00</option>
+                                        <option>13:00</option>
+                                        <option>14:00</option>
+                                        <option>15:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="fg">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="fg">
+                                <input type="tel" placeholder="+7 (000) 000-00-00">
+                            </div>
+                        </div>
+                        <button class="modal-form__btn m-btn m-btn-black">
+                            <span>Записаться</span>
+                        </button>
+
+                        <div class="modal-form__hint">
+                            <div class="text10">
+                                Нажав кнопку Вы даёте согласие с <a href="">политикой конфиденциальности</a> и даёте согласие на обработку персональных данных
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal modal4" id="3dModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L12.1276 12.1276" stroke="#4B4F53" stroke-width="2" />
+                    <path d="M1 12.125L12.1276 0.997372" stroke="#4B4F53" stroke-width="2" />
+                </svg>
+            </button>
+            <div class="modal__grid">
+                <div class="modal__top">
+                    <div class="modal__title">
+                        Записаться на 3D тур <br>
+                    по проектам в VR очках
+                    </div>
+                    <div class="modal__img">
+                        <img src="img/modal-img4.png" alt="">
+                    </div>
+                </div>
+                <div class="modal__bottom">
+                    <form action="" class="modal-form">
+                        <div class="modal-form__fields">
+                            <div class="modal-form__wrap">
+                                <div class="fg date-input">
+                                    <input type="text" readonly placeholder="25.06.2024">
+                                </div>
+                                <div class="fg">
+                                    <select>
+                                        <option>12:00</option>
+                                        <option>13:00</option>
+                                        <option>14:00</option>
+                                        <option>15:00</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="fg">
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div class="fg">
+                                <input type="tel" placeholder="+7 (000) 000-00-00">
+                            </div>
+                        </div>
+                        <button class="modal-form__btn m-btn m-btn-black">
+                            <span>Записаться</span>
+                        </button>
+
+                        <div class="modal-form__hint">
+                            <div class="text10">
+                                Нажав кнопку Вы даёте согласие с <a href="">политикой конфиденциальности</a> и даёте согласие на обработку персональных данных
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/fancybox.umd.js"></script>
+    <script src="js/air-datepicker.js"></script>
     <script src="js/main.min.js"></script>
 
 </body>
