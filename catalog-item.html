@@ -112,6 +112,9 @@
                                 <img src="img/favourite.svg" alt="">
                                 <span>Добавить в избранное</span>
                             </button>
+                            <div class="product__nav-hint">
+                                Планировку дома можно изменить
+                            </div>
                         </div>
 
                         <div class="gallery">
@@ -195,69 +198,242 @@
                             </h1>
                         </div>
 
-                        <div class="product-table">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th><span>Технология</span></th>
-                                        <th>
-                                            <span class="_view1">Гарантия на коробку </span>
-                                            <span class="_view2">Гарантия *</span>
-                                        </th>
-                                        <th><span>Цена</span></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><span>Каркас</span></td>
-                                        <td><span class="light-text">20 лет</span></td>
-                                        <td><span class="medium-text">6 208 030 ₽</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Монолит</span></td>
-                                        <td><span class="light-text">пожизненная</span></td>
-                                        <td><span class="medium-text">7 678 290 ₽</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Газоблок</span></td>
-                                        <td><span class="light-text">50 лет</span></td>
-                                        <td><span class="medium-text">8 178 054 ₽</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Керамоблок</span></td>
-                                        <td><span class="light-text">50 лет</span></td>
-                                        <td><span class="medium-text">9 023 250 ₽</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Кирпич</span></td>
-                                        <td><span class="light-text">100 лет</span></td>
-                                        <td><span class="medium-text">9 700 878 ₽</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>Брус</span></td>
-                                        <td><span class="light-text">30 лет</span></td>
-                                        <td><span class="medium-text">10 389 608 ₽</span></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="product-table__bottom">
-                                <div class="product-table__hint">
-                                    *на коробку
+                        <div class="product-info _tabs-parent">
+                            <div class="product-info__tabs">
+                                <div class="product-info__tab _tab _active" data-tab="_tab1">
+                                    <span>Монолит</span>
                                 </div>
-                                <button class="product-table__btn m-btn m-btn-gray-outline">
-                                    <img src="img/calc.svg" alt="">
-                                    <span>Рассчитать ипотеку</span>
-                                </button>
+                                <div class="product-info__tab _tab" data-tab="_tab2">
+                                    <span>Керамоблок</span>
+                                </div>
+                                <div class="product-info__tab _tab" data-tab="_tab3">
+                                    <span>Газоблок</span>
+                                </div>
+                                <div class="product-info__tab _tab" data-tab="_tab4">
+                                    <span>Каркас</span>
+                                </div>
+                            </div>
+
+                            <div class="tab-content _tab1 _active">
+                                <div class="product-info__items">
+                                    <div class="info-card info-card--bold">
+                                        <div class="info-card__col">
+                                            <div class="info-card__title">
+                                                Дом под отделку
+                                            </div>
+                                            <div class="info-card__desc">
+                                                Гарантия на коробку 100 лет <br> Монолитные фундамент, стены и перекрытия кровля металлочерепица, кирпичный фасад , окна, карнизы, ливневка, снегоудержание
+                                            </div>
+                                        </div>
+                                        <div class="info-card__col2">
+                                            <div class="info-card__price">
+                                                7 678 290 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-card ">
+                                        <div class="info-card__col">
+                                            <div class="info-card__title">
+                                                Пакет 1 - Благоустройство
+                                            </div>
+                                            <div class="info-card__desc">
+                                                Скважина, септик, забор, ворота, парковка, навес, отмостка, газон
+                                            </div>
+                                        </div>
+                                        <div class="info-card__col2">
+                                            <div class="info-card__price">
+                                                1 567 055 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-card ">
+                                        <div class="info-card__col">
+                                            <div class="info-card__title">
+                                                Пакет 2 - Отделка под ключ
+                                            </div>
+                                            <div class="info-card__desc">
+                                                Полная внутренняя отделка, электрика, отопление, вентиляция
+                                            </div>
+                                        </div>
+                                        <div class="info-card__col2">
+                                            <div class="info-card__price">
+                                                3 700 250 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info__props">
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ипотека на 10 лет под 12,9%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            6 264 398 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Первоначальный взнос 25%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            1 562 098 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ежемесячный платёж
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            96 024 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-content _tab2">
+                                <div class="product-info__items">
+                                    <div class="info-card info-card--bold">
+                                        <div class="info-card__col">
+                                            <div class="info-card__title">
+                                                Дом под отделку
+                                            </div>
+                                            <div class="info-card__desc">
+                                                Гарантия на коробку 100 лет <br> Монолитные фундамент, стены и перекрытия кровля металлочерепица, кирпичный фасад , окна, карнизы, ливневка, снегоудержание
+                                            </div>
+                                        </div>
+                                        <div class="info-card__col2">
+                                            <div class="info-card__price">
+                                                7 678 290 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info__props">
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ипотека на 10 лет под 12,9%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            6 264 398 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Первоначальный взнос 25%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            1 562 098 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ежемесячный платёж
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            96 024 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content _tab3">
+                                <div class="product-info__items">
+                                    <div class="info-card ">
+                                        <div class="info-card__col">
+                                            <div class="info-card__title">
+                                                Пакет 1 - Благоустройство
+                                            </div>
+                                            <div class="info-card__desc">
+                                                Скважина, септик, забор, ворота, парковка, навес, отмостка, газон
+                                            </div>
+                                        </div>
+                                        <div class="info-card__col2">
+                                            <div class="info-card__price">
+                                                1 567 055 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info__props">
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ипотека на 10 лет под 12,9%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            6 264 398 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Первоначальный взнос 25%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            1 562 098 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ежемесячный платёж
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            96 024 ₽
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content _tab4">
+                                <div class="product-info__items">
+                                    <div class="info-card ">
+                                        <div class="info-card__col">
+                                            <div class="info-card__title">
+                                                Пакет 2 - Отделка под ключ
+                                            </div>
+                                            <div class="info-card__desc">
+                                                Полная внутренняя отделка, электрика, отопление, вентиляция
+                                            </div>
+                                        </div>
+                                        <div class="info-card__col2">
+                                            <div class="info-card__price">
+                                                3 700 250 ₽
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-info__props">
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ипотека на 10 лет под 12,9%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            6 264 398 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Первоначальный взнос 25%
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            1 562 098 ₽
+                                        </div>
+                                    </div>
+                                    <div class="product-info__prop">
+                                        <div class="product-info__prop-title">
+                                            Ежемесячный платёж
+                                        </div>
+                                        <div class="product-info__prop-desc">
+                                            96 024 ₽
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <form action="" class="main-form">
                             <div class="main-form__text">
                                 <div class="main-form__title">
-                                    @@title
+                                    Перезвоним за 30 секунд
                                 </div>
                                 <div class="main-form__desc">
-                                    @@desc
+                                    и ответим на все Ваши вопросы
                                 </div>
                             </div>
                             <div class="main-form__wrap">
